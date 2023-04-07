@@ -1,0 +1,75 @@
+import React from "react";
+import Tilt from "react-tilt";
+import { motion } from "framer-motion";
+
+import { styles } from "../styles";
+import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
+import Tech from "./Tech";
+import TechFamiliar from "./Tech Familiar";
+
+const ServiceCard = ({ index, title, icon, description }) => (
+  <div className='xs:w-[450px] w-full'>
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className='w-full'
+    >
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+      >
+        <img
+          src={icon}
+          alt='image'
+          className='w-46 h-46 object-contain'
+        />
+
+        <h3 className='text-black text-[20px] m-1 font-bold text-center'>
+          {title}
+        </h3>
+        <p className="text-black">
+          {description}
+        </p>
+      </div>
+    </motion.div>
+  </div>
+);
+
+const About = () => {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <h2 className={styles.sectionHeadText}>Who we are.</h2>
+      </motion.div>
+
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-black text-[17px] max-w-3xl leading-[30px]'
+      >
+
+      We operate as a Cloud Petrol Pump provides Diesel directly to Companies such as Transporters, Logistics Companies, Ready Mix Cement Companies, Stone Crushers, etc. By providing Diesel in our Innovative in-house delivery mechanism, we reduce Diesel wastage and save up to 1.5 Million Tonnes of Carbon per customer per year. 
+      </motion.p>
+
+<br></br><br></br>
+<p style={{color:"black"}} className={styles.sectionSubText}>PROVIDING ON-DEMAND DIESEL DELIVERY FROM REFINERY TO TABLE, USING BOWSER TRUCKS & DATMS
+</p>
+      <div className='mt-20 flex items-center justify-center flex-wrap gap-10'>
+        
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
+
+
+
+    </>
+  );
+};
+
+export default SectionWrapper(About, "about");
