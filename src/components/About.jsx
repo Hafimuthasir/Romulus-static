@@ -47,7 +47,7 @@ const About = () => {
         <p className="text-[24px] text-black font-semibold text-center">
           Join the Fuel Efficiency Revolution with Romulus.
         </p>
-        <a className="flex items-center justify-center">
+        <a href="#contact" className="flex items-center justify-center">
           <Button variant="contained" sx={{ my: 2, minWidth:"10rem" }}>
             {" "}
             Join Now

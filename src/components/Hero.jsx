@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <a href={"#contact"}>
+        <a href="#contact">
           <Button sx={{mt:4}} className="h-8" variant="contained">
             Join Now
           </Button>
