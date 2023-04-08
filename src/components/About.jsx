@@ -49,7 +49,7 @@ const About = () => {
         </p>
         <Button variant='contained' sx={{my:2,mx:4}}> Join Now</Button>
       </div>
-      <div className="mt-[0px] lg:mt-[-60px]">
+      <div className="mt-[0px] lg:mt-[-70px]">
         <motion.div variants={textVariant()}>
           {/* <p className={styles.sectionSubText}>Introduction</p> */}
           <h2 className={styles.sectionHeadText}>Who we are.</h2>
