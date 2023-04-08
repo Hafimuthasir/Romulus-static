@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Button } from "@mui/material";
 import Tech from "./Tech";
 import TechFamiliar from "./Tech Familiar";
 
@@ -41,36 +42,44 @@ const ServiceCard = ({ index, title, icon, description }) => (
 
 const About = () => {
   return (
-    <div className="mt-[-60px] md:mt-[-40px]">
-      <motion.div variants={textVariant()}>
-        {/* <p className={styles.sectionSubText}>Introduction</p> */}
-        <h2 className={styles.sectionHeadText}>Who we are.</h2>
-      </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-black text-[17px] max-w-3xl leading-[30px]"
-      >
-        We operate as a Cloud Petrol Pump provides Diesel directly to Companies
-        such as Transporters, Logistics Companies, Ready Mix Cement Companies,
-        Stone Crushers, etc. Our innovative in-house delivery system minimizes
-        Diesel wastage, reduces carbon emissions, and saves costs for our
-        clients.We're dedicated to helping our customers reduce their carbon
-        footprint and promote sustainability
-      </motion.p>
-
-      <br></br>
-      <br></br>
-      <p style={{ color: "black" }} className={styles.sectionSubText}>
-        PROVIDING ON-DEMAND DIESEL DELIVERY FROM REFINERY TO TABLE, USING BOWSER
-        TRUCKS & DATMS
-      </p>
-      <div className="mt-20 flex items-center justify-center flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+    <>
+      <div className="mt-[-120px] mb-[30px] md:mb-[0] md:mt-[-40px] flex flex-col block lg:hidden">
+        <p className='text-[24px] text-black font-semibold text-center'>
+          Join the Fuel Efficiency Revolution with Romulus.         
+        </p>
+        <Button variant='contained' sx={{my:2,mx:4}}> Join Now</Button>
       </div>
-    </div>
+      <div className="mt-[0px] lg:mt-[-60px]">
+        <motion.div variants={textVariant()}>
+          {/* <p className={styles.sectionSubText}>Introduction</p> */}
+          <h2 className={styles.sectionHeadText}>Who we are.</h2>
+        </motion.div>
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-black text-[17px] max-w-3xl leading-[30px]"
+        >
+          We operate as a Cloud Petrol Pump provides Diesel directly to
+          Companies such as Transporters, Logistics Companies, Ready Mix Cement
+          Companies, Stone Crushers, etc. Our innovative in-house delivery
+          system minimizes Diesel wastage, reduces carbon emissions, and saves
+          costs for our clients.We're dedicated to helping our customers reduce
+          their carbon footprint and promote sustainability
+        </motion.p>
+
+        <br></br>
+        <br></br>
+        <p style={{ color: "black" }} className={styles.sectionSubText}>
+          PROVIDING ON-DEMAND DIESEL DELIVERY FROM REFINERY TO TABLE, USING
+          BOWSER TRUCKS & DATMS
+        </p>
+        <div className="mt-20 flex items-center justify-center flex-wrap gap-10">
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

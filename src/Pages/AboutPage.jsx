@@ -5,7 +5,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works } from
 function AboutPage() {
   return (
       <>
-        <div className='max-h-[18rem] md:max-h-[28rem] bg-banner-sm lg:bg-banner-lg bg-cover bg-no-repeat bg-center'>
+        <div className='max-h-[35rem] md:max-h-[28rem] bg-banner-sm lg:bg-banner-lg bg-cover bg-no-repeat bg-center'>
           <Hero />
         </div>
         <About />

@@ -8,11 +8,11 @@ import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto `}>
       <div
-        className={`absolute inset-0 top-[100px] md:top-[130px] max-w-7xl mx-auto px-8 md:px-14 flex flex-col items-start gap-5`}
+        className={`hidden lg:block absolute inset-0 top-[100px] md:top-[130px] max-w-7xl mx-auto px-8 md:px-14 flex flex-col items-start gap-5`}
       >
-        <div>
+        <div >
           {/* <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='bg-gradient-to-r from-purple-700 to-pink-500 text-transparent bg-clip-text text-gradient' >Muthasir</span>
           </h1> */}
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
 
         <a href={"#contact"}>
-          <Button className="h-8" variant="contained">
+          <Button sx={{mt:4}} className="h-8" variant="contained">
             Join Now
           </Button>
         </a>
