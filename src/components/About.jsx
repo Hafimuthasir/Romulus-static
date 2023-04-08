@@ -44,10 +44,15 @@ const About = () => {
   return (
     <>
       <div className="mt-[-120px] mb-[30px] md:mb-[0] md:mt-[-40px] flex flex-col block lg:hidden">
-        <p className='text-[24px] text-black font-semibold text-center'>
-          Join the Fuel Efficiency Revolution with Romulus.         
+        <p className="text-[24px] text-black font-semibold text-center">
+          Join the Fuel Efficiency Revolution with Romulus.
         </p>
-        <Button variant='contained' sx={{my:2,mx:4}}> Join Now</Button>
+        <a className="flex items-center justify-center">
+          <Button variant="contained" sx={{ my: 2, minWidth:"10rem" }}>
+            {" "}
+            Join Now
+          </Button>
+        </a>
       </div>
       <div className="mt-[0px] lg:mt-[-70px]">
         <motion.div variants={textVariant()}>
