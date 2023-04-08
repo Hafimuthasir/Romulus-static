@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <motion.nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        } w-full flex items-center py-3 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
         }`}
           
     >
@@ -54,7 +54,7 @@ const Navbar = () => {
           }}
         >
           <div className="flex flex-row gap-0">
-<img src={rmlogo} height='54px' width='53px' className="m-0 p-0" ></img>
+<img src={rmlogo} height='50px' width='50px' className="m-0 p-0" ></img>
 <div className="flex flex-col items-center justify-center leading-6">
 <motion.p         
        initial={{ opacity: 0, scale: 0 }} // Set initial position and opacity
@@ -66,12 +66,12 @@ const Navbar = () => {
          damping: 20,
        }}
   style={{color:'rgb(209 80 1)'}}
- className='text-shadow-md text-white text-[28px] font-bold cursor-pointer'>
+ className='text-shadow-md text-white text-[25px] font-bold cursor-pointer'>
            ROMULUS
           </motion.p>
 <span
 style={{color:'rgb(209 80 1)'}}
-className='text-[28px] font-bold cursor-pointer'
+className='text-[25px]  font-bold cursor-pointer'
 >OIL & GAS</span>
 </div>
 </div>

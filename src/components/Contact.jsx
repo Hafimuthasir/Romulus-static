@@ -100,7 +100,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your good name?"
               style={{ borderWidth: "2px", borderColor: "black" }}
-              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#bdbda7] font-medium"
+              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#c2c2c2] font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -113,7 +113,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your web address?"
               style={{ borderWidth: "2px", borderColor: "black" }}
-              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#bdbda7] font-medium"
+              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#c2c2c2] font-medium"
             />
           </label>
 
@@ -127,7 +127,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Enter your phone no."
               style={{ borderWidth: "2px", borderColor: "black" }}
-              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#bdbda7] font-medium"
+              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#c2c2c2] font-medium"
             />
           </label>
 
@@ -141,13 +141,13 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What you want to say?"
               style={{ borderWidth: "2px", borderColor: "black" }}
-              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#bdbda7] font-medium"
+              className="py-2 px-6 placeholder:text-secondary text-black rounded bg-[#c2c2c2] font-medium"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-[#bdbda7] py-3 px-8 rounded-xl outline-none w-fit text-black font-bold shadow-md shadow-primary"
+            className="bg-[#c2c2c2] py-3 px-8 rounded-xl outline-none w-fit text-black font-bold shadow-md shadow-primary"
           >
             {loading ? "Sending..." : "Send"}
           </button>
