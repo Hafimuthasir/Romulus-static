@@ -1,6 +1,6 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { Navbar} from "./components";
 import AboutPage from "./Pages/AboutPage";
 import PurchasePage from "./Pages/PurchasePage";
 

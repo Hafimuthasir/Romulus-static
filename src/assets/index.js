@@ -32,8 +32,12 @@ import tripguide from "./tripguide.png";
 import bowsertruck from "./bowsertruck.jpg";
 import datm from "./datm.jpg"
 import earth from "./earth.png"
+import saket from "./saket.png"
+import saransh from "./saransh.png"
 
 export {
+  saket,
+  saransh,
   earth,
   datm,
   bowsertruck,

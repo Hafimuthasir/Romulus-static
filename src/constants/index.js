@@ -48,12 +48,12 @@ const services = [
   {
     title: "Bowser Trucks",
     icon: bowsertruck,
-    description:"Bowser trucks are vehicles that can transport 4k-6k litres of diesel/trip. They will be filled at the Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, heavy immovable objects at the customer site.<br><br> "
+    description:"Bowser trucks are vehicles that can transport 4k to 6k litres of diesel per trip. They will be filled at the Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, heavy immovable objects at the customer site ensuring uninterupted fuel supply."
   },
   {
     title: "DATMS",
     icon: datm,
-    description:"DATM is an automatic (stationery) diesel dispenser, that is placed at a customer’s premises. It holds 2k litres of diesel at any point. Customers’ trucks can drive upto the ATM and refuel. When the tank goes below 500L, Romulus is intimated and one of our bowser trucks refills it."
+    description:"DATM is an automatic (stationary) diesel dispenser placed at customer premises. It holds 2k litres of diesel at any point. Customers can refuel their trucks by driving up to the ATM. When the fuel tank level drops below 500L, Romulus is intimated and dispatches a bowser truck for a refill."
   }
 ];
 

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import { saveAs } from 'file-saver';
 import { Button } from "@mui/material";
 // import DownloadIcon from '@mui/icons-material/Download';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
@@ -18,10 +17,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const downloadCV = () => {
-    const cvUrl = "../../public/cv.pdf";
-    saveAs(cvUrl, 'Muthasir.pdf');
-  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,18 +78,18 @@ className='text-[28px] font-bold cursor-pointer'
           
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        {/* <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : scrolled? "text-secondary":"text-black"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-[chocolate]" : scrolled? "text-white":"text-black"
+                } hover:text-[chocolate] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img

@@ -9,6 +9,7 @@ import { slideIn } from "../utils/motion";
 import { Avatar } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import { saket,saransh } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -90,9 +91,7 @@ const Contact = () => {
           className="mt-5 flex flex-col gap-2"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium">
-              Name
-            </span>
+            <span className="text-white font-medium">Name</span>
             <input
               type="text"
               name="name"
@@ -157,30 +156,48 @@ const Contact = () => {
 
       <div className="text-black rounded-lg w-full flex flex-col gap-3 items-center justify-evenly lg:pl-20">
         <div>
-          <h1 className="text-[2.5rem] font-bold">The Founding Partners</h1>
+          <h1
+            style={{ color: "#191919" }}
+            className="text-[1.6rem] lg:text-[2.7rem] font-bold pb-2"
+          >
+            Founding Partners
+          </h1>
           <div className="flex flex-row gap-10 items-center mt-2 justify-center">
             <div className="flex flex-col items-center">
-              <Avatar sx={{ width: "6rem", height: "6rem" }}>H</Avatar>
-              <span className="font-bold text-[1.2rem]">Saransh Tiku</span>
-              <span>CEO</span>
+              <Avatar src={saransh} sx={{ width: "6rem", height: "6rem" }} />
+              <span className="font-bold lg:text-[1.2rem]">Saransh Tiku</span>
+              {/* <span>CEO</span> */}
             </div>
 
             <div className="flex flex-col items-center">
-              <Avatar sx={{ width: "6rem", height: "6rem" }}>H</Avatar>
-              <span className="font-bold text-[1.2rem]">Saket Tiku</span>
-              <span>CEO</span>
+              <Avatar src={saket} sx={{ width: "6rem", height: "6rem" }} />
+              <span className="font-bold lg:text-[1.2rem]">Saket Tiku</span>
+              {/* <span>CEO</span> */}
             </div>
           </div>
         </div>
 
-        <div>
-          <h1 className="text-[3rem] font-bold">Contact Info</h1>
-          <div className="flex flex-col items center mt-1">
-            <span className="text-[1.3rem]">
-              <span className="font-bold "> <EmailIcon/> Email</span> : sales@romulusoil.com{" "}
+        <div className="py-10">
+          <h1
+            style={{ color: "#191919" }}
+            className="text-center text-[1.6rem] lg:text-[2.7rem] font-bold"
+          >
+            Contact Info
+          </h1>
+          <div className="flex flex-col items center mt-1 gap-3">
+            <span className="lg:text-[1.3rem]">
+              <span className="font-bold ">
+                {" "}
+                <EmailIcon /> Email
+              </span>{" "}
+              : sales@romulusoil.com{" "}
             </span>
-            <span className="text-[1.3rem]">
-              <span className="font-bold"> <LocalPhoneIcon/> Contact No</span> : +91 75069 87897
+            <span className="lg:text-[1.3rem]">
+              <span className="font-bold">
+                {" "}
+                <LocalPhoneIcon /> Contact No
+              </span>{" "}
+              : +91 75069 87897
             </span>
           </div>
         </div>

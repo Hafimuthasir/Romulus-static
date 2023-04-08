@@ -42,7 +42,7 @@ const ServiceCard = ({ index, title, icon, description }) => (
 
 const About = () => {
   return (
-    <>
+    <div className="mt-[-60px] md:mt-[-40px]">
       <motion.div variants={textVariant()}>
         {/* <p className={styles.sectionSubText}>Introduction</p> */}
         <h2 className={styles.sectionHeadText}>Who we are.</h2>
@@ -50,25 +50,28 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-black text-[17px] max-w-3xl leading-[30px]'
+        className="mt-4 text-black text-[17px] max-w-3xl leading-[30px]"
       >
-
-      We operate as a Cloud Petrol Pump provides Diesel directly to Companies such as Transporters, Logistics Companies, Ready Mix Cement Companies, Stone Crushers, etc. By providing Diesel in our Innovative in-house delivery mechanism, we reduce Diesel wastage and save up to 1.5 Million Tonnes of Carbon per customer per year. 
+        We operate as a Cloud Petrol Pump provides Diesel directly to Companies
+        such as Transporters, Logistics Companies, Ready Mix Cement Companies,
+        Stone Crushers, etc. Our innovative in-house delivery system minimizes
+        Diesel wastage, reduces carbon emissions, and saves costs for our
+        clients.We're dedicated to helping our customers reduce their carbon
+        footprint and promote sustainability
       </motion.p>
 
-<br></br><br></br>
-<p style={{color:"black"}} className={styles.sectionSubText}>PROVIDING ON-DEMAND DIESEL DELIVERY FROM REFINERY TO TABLE, USING BOWSER TRUCKS & DATMS
-</p>
-      <div className='mt-20 flex items-center justify-center flex-wrap gap-10'>
-        
+      <br></br>
+      <br></br>
+      <p style={{ color: "black" }} className={styles.sectionSubText}>
+        PROVIDING ON-DEMAND DIESEL DELIVERY FROM REFINERY TO TABLE, USING BOWSER
+        TRUCKS & DATMS
+      </p>
+      <div className="mt-20 flex items-center justify-center flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-
-
-
-    </>
+    </div>
   );
 };
 

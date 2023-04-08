@@ -38,7 +38,6 @@ const ExperienceCard = ({ experience }) => {
   return (
     <div className="p-5 rounded w-full md:w-auto" style={{width:"100%"}}>
       <div className="flex flex-col items-center justify-center"> 
-        {/* <img width="100" height="100" src={experience.icon}></img> */}
         {experience.icon == "margin" ?<TrendingUpIcon sx={{ fontSize: 68, color: 'chocolate' }}/>:experience.icon == "save"?<SavingsIcon sx={{ fontSize: 68, color: 'chocolate' }}/>:<DiscountIcon sx={{ fontSize: 68, color: 'chocolate' }}/>}
         <h3 className='text-[black] text-[24px] font-bold'>{experience.title}</h3>
         <p
@@ -53,7 +52,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-black-100 text-[14px] pl-1 tracking-wider'
+            className='text-black text-[15px] pl-1 tracking-wider'
           >
             {point}
           </li>
