@@ -36,32 +36,42 @@ const ExperienceCard = ({ experience }) => {
   };
 
   return (
-    <div className="p-5 rounded w-full md:w-auto" style={{width:"100%"}}>
-      <div className="flex flex-col items-center justify-center"> 
-        {experience.icon == "margin" ?<TrendingUpIcon sx={{ fontSize: 68, color: 'chocolate' }}/>:experience.icon == "save"?<SavingsIcon sx={{ fontSize: 68, color: 'chocolate' }}/>:<DiscountIcon sx={{ fontSize: 68, color: 'chocolate' }}/>}
-        <h3 className='text-[black] text-[24px] font-bold'>{experience.title}</h3>
+    <div className="pr-6 lg:p-5 rounded w-full md:w-auto" style={{ width: "100%" }}>
+      <div
+        className={`flex flex-col items-center justify-center ${
+          experience.icon == "margin" ? "lg:pl-10" : experience.icon == "save" ? "lg:pl-10": "lg:pl-10"
+        }`}
+      >
+        {experience.icon == "margin" ? (
+          <TrendingUpIcon sx={{ fontSize: 68, color: "chocolate" }} />
+        ) : experience.icon == "save" ? (
+          <SavingsIcon sx={{ fontSize: 68, color: "chocolate" }} />
+        ) : (
+          <DiscountIcon sx={{ fontSize: 68, color: "chocolate" }} />
+        )}
+        <h3 className={`text-[black] text-[24px] font-bold `}>
+          {experience.title}
+        </h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
-          <span
+          <p
             key={`experience-point-${index}`}
-            className='text-black text-[15px] pl-1 tracking-wider'
+            className="text-black text-[15px] pl-1 tracking-wider text-justify"
           >
             {point}
-          </span>
+          </p>
         ))}
       </ul>
       <br></br>
-
-</div>
-
+    </div>
   );
 };
 

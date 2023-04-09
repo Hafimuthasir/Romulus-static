@@ -33,7 +33,7 @@ const ServiceCard = ({ index, title, icon, description }) => (
         <h3 className='text-black text-[20px] m-1 font-bold text-center'>
           {title}
         </h3>
-        <p className="text-black">
+        <p className="text-black text-justify">
           {description}
         </p>
       </div>
@@ -58,12 +58,12 @@ const About = () => {
       <div className="mt-[0px] lg:mt-[-70px]">
         <motion.div variants={textVariant()}>
           {/* <p className={styles.sectionSubText}>Introduction</p> */}
-          <h2 className={styles.sectionHeadText}>Who we are.</h2>
+          <h2 className={styles.sectionHeadText}>Who we are ?</h2>
         </motion.div>
 
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-black text-[17px] max-w-3xl leading-[30px]"
+          className="mt-4 text-black text-[17px] max-w-3xl leading-[30px] text-justify"
         >
           We operate as a Cloud Petrol Pump provides Diesel directly to
           Companies such as Transporters, Logistics Companies, Ready Mix Cement

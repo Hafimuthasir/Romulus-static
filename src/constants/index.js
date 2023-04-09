@@ -48,9 +48,9 @@ const services = [
     description:"Bowser trucks are vehicles that can transport 4k to 6k litres of diesel per trip. They will be filled at the Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, heavy immovable objects at the customer site ensuring uninterupted fuel supply."
   },
   {
-    title: "DATMS",
+    title: "DATUMS",
     icon: datm,
-    description:"DATM is an automatic (stationary) diesel dispenser placed at customer premises. It holds 2k litres of diesel at any point. Customers can refuel their trucks by driving up to the ATM. When the fuel tank level drops below 500L, Romulus is intimated and dispatches a bowser truck for a refill."
+    description:"DATUM is an automatic diesel dispenser placed at customer premises. It holds 2k litres of diesel at any point. Customers can refuel their trucks by driving up to the ATM. When the fuel tank level drops below 500L, Romulus is intimated and dispatches a bowser truck for a refill."
   }
 ];
 
@@ -163,7 +163,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "Current fuel market relies on any one of two options, a discount per litre or a credit period. Petrol pump owners have high fixed costs and can only afford to offer one.Romulus offers both discount and credit period to pre-selected customers with good payment history through a fuel loan card from Tata Motors Finance.",
+      // Current fuel market relies on any one of two options, a discount per litre or a credit period. 
+      "Petrol pump owners have high fixed costs and can only afford to offer a discount per litre or a credit period.Romulus offers both discount and credit period to pre-selected customers with good payment history through a fuel loan card from Tata Motors Finance.",
       // "Romulus offers a discount per litre to pre-selected customers with an excellent track record history with Tata Motors Finance. These customers can also get 30 days credit on fuel purchases through a fuel loan card offered by TMF.",
     ],
     
@@ -175,7 +176,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Petrol pump owners currently are forced to work on smaller margins than Romulus, as the OMCs (Oil Marketing Companies e.g. HP, BP, IOCL) have direct investments in the petrol pumps, but this is not the case for Romulus. As a result, Romulus is able to obtain a higher margin from the OMCs.",
+      "Petrol pump owners currently are forced to work on smaller margins than Romulus, as the OMCs have direct investments in the petrol pumps, but this is not the case for Romulus. As a result, Romulus is able to obtain a higher margin from the Oil Marcketing Companys.",
     ],
   },
   {
@@ -183,7 +184,8 @@ const experiences = [
 
     icon: "save",
     points: [
-      "Romulus offers diesel directly at the doorstep of the end-user, which has a cumulative effect. For example, on average our customers own 150-200 trucks each. If each truck has to travel ~5kms to a petrol pump, we save each customer 750 kms running per day, or 22,500 kms per month.",
+      "Romulus delivers diesel directly at the doorstep to the end-user's, saving customers from the trouble of traveling to a petrol pump, which can amount to 750 km of travel per day for each customer owning 150-200 trucks. This translates to a monthly savings of 22,500 km per customer."
+      // "Romulus offers diesel directly at the doorstep of the end-user, which has a cumulative effect. For example, on average our customers own 150-200 trucks each. If each truck has to travel ~5kms to a petrol pump, we save each customer 750 kms running per day, or 22,500 kms per month.",
     ],
    
   },
