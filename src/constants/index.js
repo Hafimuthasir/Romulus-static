@@ -26,6 +26,7 @@ import {
   threejs,
   drf,
   datm,
+  bowsertruck2,
 } from "../assets";
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
@@ -43,7 +44,7 @@ export const navLinks = [
 const services = [
   {
     title: "Bowser Trucks",
-    icon: bowsertruck,
+    icon: bowsertruck2,
     description:"Bowser trucks are vehicles that can transport 4k to 6k litres of diesel per trip. They will be filled at the Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, heavy immovable objects at the customer site ensuring uninterupted fuel supply."
   },
   {

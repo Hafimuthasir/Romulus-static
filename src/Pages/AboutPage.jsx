@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works } from "../components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Gallery } from "../components";
 
 
 function AboutPage() {
@@ -11,6 +11,7 @@ function AboutPage() {
         <About />
         <Experience />
         <Works />
+        <Gallery/>
 
         {/* <Feedbacks /> */}
         <div className='relative z-0'>
