@@ -87,7 +87,7 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           WE REDUCE THE CARBON FOOTPRINT OF CONSUMERS, GIVING BACK MORE TO THE
-          ENVIRONMENT THAN WE TAKE
+          ENVIRONMENT THAN WE TAKE.
         </motion.p>
       </div>
 

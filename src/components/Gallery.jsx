@@ -8,9 +8,12 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { bowsertruck,bowsertruck2,datm,datum2,datum3 } from '../assets'
 import { useState } from 'react'
+import {gallery} from "../constants"
+
 
 
 const images = [bowsertruck, datm, datum2, bowsertruck2, datum3];
+
 
 function Gallery() {
 
@@ -23,6 +26,17 @@ function Gallery() {
       slidesToShow: 3,
       centerMode: true,
       centerPadding: 0,
+      responsive: [
+        {
+          breakpoint: 768, // Set the breakpoint at which the image should be bigger
+          settings: {
+            slidesToShow: 1, // Show only 1 slide
+            centerMode: true,
+            centerPadding: "40px", // Add padding to make the image bigger
+            initialSlide: 1,
+          },
+        },
+      ],
       nextArrow: (
         <ArrowForwardIosIcon
           sx={{ color: "black", "&:hover": { color: "chocolate" } }}
@@ -47,13 +61,23 @@ function Gallery() {
 
       <div className="App">
         <Slider {...settings}>
-          {images.map((img, idx) => (
+          {gallery.map((obj,idx) => (
             <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-              <img src={img} alt={img} />
+              <img src={obj.img} alt={obj.img} />
+              <p className="text-black text-justify">
+                {/* {obj.description} */}
+              </p>
             </div>
           ))}
         </Slider>
       </div>
+      {/* <p className="text-black text-justify">
+        Take a closer look at our extensive collection of pioneering solutions
+        and remarkable accomplishments in our gallery of cutting-edge
+        innovations. With impressive products and services, we showcase our
+        unwavering commitment to developing innovative solutions that address
+        the diverse needs of our customers.
+      </p> */}
     </>
   );
 }

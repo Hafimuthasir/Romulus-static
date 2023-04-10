@@ -27,6 +27,8 @@ import {
   drf,
   datm,
   bowsertruck2,
+  datum3,
+  datum2,
 } from "../assets";
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
@@ -45,12 +47,12 @@ const services = [
   {
     title: "Bowser Trucks",
     icon: bowsertruck2,
-    description:"Bowser trucks are vehicles that can transport 4k to 6k litres of diesel per trip. They will be filled at the Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, immovable heavy objects at the customer site ensuring uninterupted fuel supply."
+    description:"Bowser trucks are vehicles that can transport 4000 to 6000 litres of diesel per trip. They are filled from Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, immovable heavy objects at the customer site ensuring uninterupted fuel supply."
   },
   {
     title: "DATUMS",
     icon: datm,
-    description:"DATUM is an automatic diesel dispenser placed at customer premises. It holds 2k litres of diesel at any point. Customers can refuel their trucks by driving up to the ATM. When the fuel tank level drops below 500L, Romulus is intimated and dispatches a bowser truck for a refill."
+    description:"DATUM is an automatic diesel dispenser placed at customer premises. It holds 2000 litres of diesel at any point. Customers can refuel their trucks by driving up to the ATM. When the fuel tank level drops below 500L, Romulus is intimated and dispatches a bowser truck for a refill."
   }
 ];
 
@@ -164,7 +166,7 @@ const experiences = [
     date: "March 2020 - April 2021",
     points: [
       // Current fuel market relies on any one of two options, a discount per litre or a credit period. 
-      "Petrol pump owners have high fixed costs and can only afford to offer a discount per litre or a credit period.Romulus offers both discount and credit period to pre-selected customers with good payment history through a fuel loan card from Tata Motors Finance.",
+      "Petrol pump owners have high fixed costs and can only afford to offer a discount per litre or a credit period. Romulus offers both discount and credit period to pre-selected customers with good payment history through a fuel loan card from Tata Motors Finance.",
       // "Romulus offers a discount per litre to pre-selected customers with an excellent track record history with Tata Motors Finance. These customers can also get 30 days credit on fuel purchases through a fuel loan card offered by TMF.",
     ],
     
@@ -196,6 +198,29 @@ const experiences = [
 
 
 
+const gallery = [
+  {
+    "img":bowsertruck,
+    "description":"Take a closer look at our extensive collection of pioneering solutions and remarkable accomplishments in our gallery of cutting-edge innovations."
+  },
+    {
+    "img":datm,
+    "description":"sde a closer look at our extensive collection of pioneering solutions and remarkable accomplishments in our gallery of cutting-edge innovations."
+  },
+    {
+    "img":datum2,
+    "description":"io a closer look at our extensive collection of pioneering solutions and remarkable accomplishments in our gallery of cutting-edge innovations."
+  },
+    {
+    "img":bowsertruck2,
+    "description":"Take a closer look at our extensive collection of pioneering solutions and remarkable accomplishments in our gallery of cutting-edge innovations."
+  },
+   {
+    "img":datum3,
+    "description":"Take a closer look at our extensive collection of pioneering solutions and remarkable accomplishments in our gallery of cutting-edge innovations."
+  },
+  
+]
 
 
 
@@ -211,5 +236,4 @@ const experiences = [
 
 
 
-
-export { services, technologies, experiences, familiar };
+export { services, technologies, experiences, familiar, gallery };
