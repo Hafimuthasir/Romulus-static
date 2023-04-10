@@ -45,7 +45,7 @@ const services = [
   {
     title: "Bowser Trucks",
     icon: bowsertruck2,
-    description:"Bowser trucks are vehicles that can transport 4k to 6k litres of diesel per trip. They will be filled at the Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, immovable objects at the customer site ensuring uninterupted fuel supply."
+    description:"Bowser trucks are vehicles that can transport 4k to 6k litres of diesel per trip. They will be filled at the Indian Oil refinery, from where they will transport diesel directly to cranes, stone crushers, generators, immovable heavy objects at the customer site ensuring uninterupted fuel supply."
   },
   {
     title: "DATUMS",
