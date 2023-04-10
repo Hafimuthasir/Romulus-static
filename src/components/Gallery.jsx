@@ -38,13 +38,21 @@ function Gallery() {
         },
       ],
       nextArrow: (
-          <ArrowForwardIosIcon
-            sx={{ color: "black", mr:"13px", "&:hover": { color: "chocolate" } }}
-          />
+        <ArrowForwardIosIcon
+          sx={{
+            color: "black",
+            mr: ["25px", "13px"],
+            "&:hover": { color: "chocolate" },
+          }}
+        />
       ),
       prevArrow: (
         <ArrowBackIosNewIcon
-          sx={{ color: "black", ml:"13px", "&:hover": { color: "chocolate" } }}
+          sx={{
+            color: "black",
+            ml: ["25px", "13px"],
+            "&:hover": { color: "chocolate" },
+          }}
         />
       ),
       beforeChange: (current, next) => setImageIndex(next),
