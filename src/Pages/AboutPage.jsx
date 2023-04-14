@@ -1,23 +1,17 @@
 import React from 'react'
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Gallery } from "../components";
-
+import { IntroSection, ContactSection, DifferentSection, Banner, CarbonSection, GallerySection } from "../components";
 
 function AboutPage() {
   return (
       <>
         <div className='max-h-[32rem] md:max-h-[28rem] bg-banner-sm lg:bg-banner-lg bg-cover bg-no-repeat bg-center'>
-          <Hero />
+          <Banner />
         </div>
-        <About />
-        <Experience />
-        <Works />
-        <Gallery/>
-
-        {/* <Feedbacks /> */}
-        <div className='relative z-0'>
-          <Contact />
-          {/* <StarsCanvas /> */}
-        </div>
+        <IntroSection />
+        <DifferentSection />
+        <CarbonSection />
+        <GallerySection />
+          <ContactSection />
         </>
   )
 }

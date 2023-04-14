@@ -1,5 +1,5 @@
 {
-  "name": "3dfolio",
+  "name": "Romulus",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,13 +15,9 @@
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.12",
-    "@react-three/drei": "^9.56.24",
-    "@react-three/fiber": "^8.11.1",
     "build": "^0.1.4",
     "devicon-react-svg": "^0.2.4",
-    "file-saver": "^2.0.5",
     "framer-motion": "^9.0.7",
-    "maath": "^0.5.2",
     "npm": "^9.6.1",
     "react": "^18.2.0",
     "react-countup": "^6.4.2",
@@ -29,11 +25,9 @@
     "react-intersection-observer": "^9.4.3",
     "react-router-dom": "^6.8.1",
     "react-slick": "^0.29.0",
-    "react-vertical-timeline-component": "^3.6.0",
     "run": "^1.4.0",
     "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1",
-    "three": "^0.149.0"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

@@ -1,23 +1,20 @@
-import Hero from "./Hero";
+import Banner from "./Banner";
 import Navbar from "./Navbar";
-import About from "./About";
-import Tech from "./Tech";
-import Experience from "./Experience";
-import Works from "./Works";
-import Feedbacks from "./Feedbacks";
-import Contact from "./Contact";
-import Gallery from "./Gallery";
+import IntroSection from "./IntroSection";
+
+import DifferentSection from "./DifferentSection";
+import CarbonSection from "./CarbonSection";
+import ContactSection from "./ContactSection";
+import GallerySection from "./GallerySection";
 
 
 
 export {
-  Hero,
+  Banner,
   Navbar,
-  About,
-  Tech,
-  Experience,
-  Works,
-  Feedbacks,
-  Contact,
-  Gallery
+  IntroSection,
+  DifferentSection,
+  CarbonSection,
+  ContactSection,
+  GallerySection
 };

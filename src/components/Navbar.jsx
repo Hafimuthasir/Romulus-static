@@ -3,13 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 import { Button } from "@mui/material";
-// import DownloadIcon from '@mui/icons-material/Download';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import ArticleIcon from '@mui/icons-material/Article';
 import { motion } from "framer-motion";
-import GitHubIcon from '@mui/icons-material/GitHub';
 import rmlogo from '../assets/rmlogo.png'
 
 const Navbar = () => {
