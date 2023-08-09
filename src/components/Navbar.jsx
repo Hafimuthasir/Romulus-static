@@ -7,6 +7,7 @@ import { menu, close } from "../assets";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 import rmlogo from '../assets/rmlogo.png'
+import LoginIcon from "@mui/icons-material/Login";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -102,15 +103,24 @@ const Navbar = () => {
           ))}
         </ul> */}
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img
+        <div className="flex flex-1 justify-end items-center">
+          <a
+            style={{
+              textDecoration: "underline",
+              color: scrolled ? "white" : "black",
+            }}
+            href="https://user.romulusoil.com"
+          >
+            Partner Login <LoginIcon />
+          </a>
+          {/* <img
             src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
-          />
+          /> */}
 
-          <div
+          {/* <div
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-sm`}
@@ -131,7 +141,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.nav>
